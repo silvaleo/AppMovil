@@ -1,10 +1,10 @@
 <!DOCTYPE html -->
     <html>
         <head>
+            
             <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
             <script src="js/jquery.min.js"></script>
             <script src="js/jquery.mobile-1.4.5.min.js"></script>
-            <script type="text/javascript" charset="utf-8" src="phongap.js"></script>
             <style type="text/css">
                 p{
                   text-align: center;  
@@ -28,7 +28,7 @@
                         $.ajax({
                             type:"POST",
                             url:"envio.php",
-                            data: "nombre="+nom+"&apellidopaterno="+appp+"&apellidomaterno="+appm+"&telefono="+tel+"&email="+email+"&direccion="+direc+"&observaciones="+obser,
+                            data: "nombre="+nom+"&apellidop="+appp+"&apellidom="+appm+"&telefono="+tel+"&email="+email+"&direccion="+direc+"&obser="+obser,
                             success: recepcion
                             });
                         });
